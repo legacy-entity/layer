@@ -22,6 +22,11 @@
 
     console.assert(game.el.innerHTML === '<div id="bg"><img></div>')
 
+    var e = { el: document.createElement('button') }
+    bg.add(e)
+
+    console.assert(game.el.innerHTML === '<div id="bg"><img><button></button></div>')
+
     </script>
   </body>
 </html>
