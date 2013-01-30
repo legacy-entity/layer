@@ -1,0 +1,9 @@
+{
+  "name": "layer",
+  "version": "0.0.1",
+  "description": "layer system",
+  "keywords": ["game","layer","system"],
+  "author": "stagas",
+  "license": "MIT",
+  "scripts": ["index.js"]
+}

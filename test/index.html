@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>layer</title>
+    <link rel="stylesheet" href="../build/build.css">
+  </head>
+  <body>
+    <div id="game"></div>
+    <script src="../build/build.js"></script>
+    <script>
+    var layer = require('layer')
+
+    var game = { el: document.getElementById('game') }
+    var bg = layer(game.el, 'bg')
+
+    var e = { el: document.createElement('img') }
+    bg.add(e)
+
+    console.assert(game.el.innerHTML === '')
+
+    bg.start()
+
+    console.assert(game.el.innerHTML === '<div id="bg"><img></div>')
+
+    </script>
+  </body>
+</html>
