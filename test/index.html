@@ -27,6 +27,10 @@
 
     console.assert(game.el.innerHTML === '<div id="bg"><img><button></button></div>')
 
+    bg.remove(e)
+
+    console.assert(game.el.innerHTML === '<div id="bg"><img></div>')
+
     </script>
   </body>
 </html>

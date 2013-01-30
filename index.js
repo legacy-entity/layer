@@ -21,5 +21,9 @@ module.exports = function (el, name) {
     layer.el.appendChild(e.el)
   }
 
+  layer.remove = function (e) {
+    layer.el.removeChild(e.el)
+  }
+
   return layer
 }
